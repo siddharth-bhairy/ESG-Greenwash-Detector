@@ -1,0 +1,61 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# ESG Report Authenticity Scorer — Requirements
+# Project: Greenwashing Detection via ClimateBERT Fine-Tuning
+# Author:  Apoorva Singh  |  PRN 202201070030  |  Capstone 2025-26
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Core Deep Learning ────────────────────────────────────────────────────────
+torch>=2.2.0                   # PyTorch — CPU / CUDA / MPS auto-selection
+transformers>=4.40.0           # HuggingFace Transformers (ClimateBERT, RoBERTa)
+datasets>=2.19.0               # HuggingFace Datasets — efficient data loading
+tokenizers>=0.19.0             # Fast Rust tokenizers (required by Transformers)
+accelerate>=0.29.0             # Trainer backend for multi-device support
+evaluate>=0.4.1                # HuggingFace Evaluate — F1, precision, recall, AUC
+
+# ── Classical ML & Feature Engineering ───────────────────────────────────────
+scikit-learn>=1.4.0            # TF-IDF, Logistic Regression, SVM baselines; metrics
+numpy>=1.26.0                  # Numerical ops
+scipy>=1.13.0                  # Spearman correlation, statistical tests
+
+# ── NLP Utilities ────────────────────────────────────────────────────────────
+spacy>=3.7.0                   # NER, POS tagging, dependency parsing
+# Run after install: python -m spacy download en_core_web_sm
+nltk>=3.8.1                    # Hedge word lists, tokenization fallback
+
+# ── Data Handling ─────────────────────────────────────────────────────────────
+pandas>=2.2.0                  # DataFrame ops — merge gold + auto labels
+openpyxl>=3.1.2                # Read/write .xlsx label files
+
+# ── Explainability ────────────────────────────────────────────────────────────
+shap>=0.45.0                   # SHAP values — global feature importance
+lime>=0.2.0.1                  # LIME — sentence-level word attribution
+
+# ── Experiment Tracking (optional but recommended) ────────────────────────────
+mlflow>=2.12.0                 # Local experiment tracking + model registry
+# wandb>=0.16.0                # Uncomment for Weights & Biases integration
+
+# ── Visualisation & Reporting ─────────────────────────────────────────────────
+plotly>=5.21.0                 # Interactive score-breakdown charts
+matplotlib>=3.8.0              # Static plots (confusion matrix, SHAP bars)
+seaborn>=0.13.0                # Heatmaps, distribution plots
+
+# ── Dashboard (Phase 2) ───────────────────────────────────────────────────────
+streamlit>=1.34.0              # Interactive web UI for report upload + scoring
+reportlab>=4.2.0               # Generate downloadable PDF analysis reports
+
+# ── PDF Ingestion ─────────────────────────────────────────────────────────────
+pdfplumber>=0.11.0             # Primary PDF text extraction
+PyMuPDF>=1.24.0                # Fallback PDF parser (fitz); faster on large files
+
+# ── Dev / Quality ─────────────────────────────────────────────────────────────
+python-dotenv>=1.0.1           # Load .env for any API keys (optional)
+tqdm>=4.66.0                   # Progress bars in training loops
+rich>=13.7.0                   # Pretty console output / logging tables
+
+streamlit>=1.32.0
+torch>=2.0.0
+transformers>=4.38.0
+pypdf>=4.0.0
+pandas>=2.0.0
+plotly>=5.18.0
+numpy>=1.24.0
