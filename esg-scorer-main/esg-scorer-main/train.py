@@ -1,8 +1,6 @@
 """
 train.py — Fine-Tune ClimateBERT for ESG Greenwashing Detection
 ================================================================
-Capstone Project 2025-26  |  Apoorva Singh  |  PRN 202201070030
-
 Architecture Context
 --------------------
 ``climatebert/distilroberta-base-climate-f`` is a DistilRoBERTa model
