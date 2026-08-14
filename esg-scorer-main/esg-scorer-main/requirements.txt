@@ -1,7 +1,5 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # ESG Report Authenticity Scorer — Requirements
-# Project: Greenwashing Detection via ClimateBERT Fine-Tuning
-# Author:  Apoorva Singh  |  PRN 202201070030  |  Capstone 2025-26
 # ─────────────────────────────────────────────────────────────────────────────
 
 # ── Core Deep Learning ────────────────────────────────────────────────────────
