@@ -1,8 +1,6 @@
 """
 inference.py — ESG Authenticity Scorer Inference & Pillar Scoring
 =================================================================
-Capstone Project 2025-26  |  Apoorva Singh  |  PRN 202201070030
-
 Architecture Context
 --------------------
 At inference time we load the fine-tuned ``climatebert/distilroberta-base-
