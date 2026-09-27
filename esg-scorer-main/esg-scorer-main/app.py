@@ -565,8 +565,6 @@ with st.sidebar:
     **Plotly** visualisations
 
     ---
-    *Capstone Project 2025–26*  
-    *Apoorva Singh | PRN 202201070030*
     """)
 
 
